@@ -1,6 +1,8 @@
 # Ignore the virtual environment directory
 venv/
-
+PyWhatKit_DB.txt
+screenshot.png
+config.json
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
