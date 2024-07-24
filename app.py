@@ -65,13 +65,20 @@ def take_and_send_screenshot():
         print(f"Error taking or sending screenshot: {str(e)}")
 
 
+def on_activate_h():
+    print('<ctrl>+<alt>+h pressed')
+    take_and_send_screenshot()
+
+
 
 def main():
     print("Welcome to the Screenshot Sender!")
     phone_number = get_phone_number()
     print(f"Using WhatsApp number: {phone_number}")
-    print("Press Ctrl+Shift+S to take a screenshot and send it via WhatsApp.")
-    take_and_send_screenshot()
+    print("Press Ctrl+alt+S to take a screenshot and send it via WhatsApp.")
+    with keyboard.GlobalHotKeys({
+        '<ctrl>+<alt>+h': on_activate_h}) as h:
+        h.join()
 
 
 if __name__ == "__main__":
