@@ -35,10 +35,13 @@ Screenshot Sender is a Python-based utility that allows you to take a screenshot
 
 ## Usage
 
+- if you are using `linux` then you need to install the `copyq` globally.
+  [PyWhatKit](https://github.com/Ankit404butfound/PyWhatKit/wiki/Sending-WhatsApp-Messages) -- [copyq](https://github.com/hluk/CopyQ)
+
 1. Run the script:
 
    ```
-   python main.py
+   python app.py
    ```
 
 2. Press
