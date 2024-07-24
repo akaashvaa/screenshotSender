@@ -39,7 +39,7 @@ def send_to_whatsapp(image_path):
         abs_image_path = os.path.abspath(image_path)
         
         print(f"Attempting to send image from: {abs_image_path}")
-        pywhatkit.sendwhats_image(phone_number, abs_image_path)
+        pywhatkit.sendwhats_image(phone_number, abs_image_path, "Test", 10, True, 5)
         print(f"Screenshot sent successfully to {phone_number}")
 
     except Exception as e:
